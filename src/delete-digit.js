@@ -12,8 +12,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function deleteDigit(n) {
-	numbersToCompare = [];
-	nArray = n.toString().split("");
+	const numbersToCompare = [];
+	const nArray = n.toString().split("");
 	nArray.forEach((element, index, array) => {
 		numbersToCompare.push(
 			Number.parseInt(array.slice(0, index).concat(array.slice(index + 1)).join(""))
